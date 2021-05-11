@@ -1,0 +1,12 @@
+* Usage
+
+You can indicate the size of the stack in the context where the function is called using: `init_stack (int* size, int* index, int n)`. 
+The basic operations (`push ()` and `pop ()`) are configured to receive a reference from the stack.
+
+* Build
+
+#+BEGIN_SRC sh
+make build
+make test # stack test
+#+END_SRC
+
