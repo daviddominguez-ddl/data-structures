@@ -1,7 +1,20 @@
 * Usage
 
-You can indicate the size of the stack in the context where the function is called using: `init_stack (int* size, int* index, int n)`. 
-The basic operations (`push ()` and `pop ()`) are configured to receive a reference from the stack.
+You can indicate the size of the stack in the context where the function is called using: ~init_stack (int* size, int* index, int n)~. 
+The basic operations (~push ()~ and ~pop ()~) are configured to receive a reference from the stack.
+
+*Sample*
+
+#+BEGIN_SRC c
+struct stack ds_stack; /* create stack */
+
+init_stack(&ds_stack.size, &ds_stack.index, n); /* init stack */
+ds_stack.item = array_alloc(ds_stack.size);	/* get memory in the
+							 * current context */
+							 
+push(&ds_stack, k); /* pop operation */
+pop(&ds_stack); /* pop operation */
+#+END_SRC
 
 * Build
 
