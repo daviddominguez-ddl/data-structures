@@ -1,2 +1,2 @@
 # data-structures
-Review and implementation of basic data structures in different languages
+Review and implementation of classic data structure algorithms
